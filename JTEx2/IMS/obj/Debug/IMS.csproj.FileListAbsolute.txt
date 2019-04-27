@@ -19,3 +19,17 @@ C:\Users\azhan\OneDrive\Desktop\EFJtex\JTEx2\IMS\obj\Debug\IMS.Migrations.ADDyar
 C:\Users\azhan\OneDrive\Desktop\EFJtex\JTEx2\IMS\obj\Debug\IMS.Migrations.newtableInventory.resources
 C:\Users\azhan\OneDrive\Desktop\EFJtex\JTEx2\IMS\obj\Debug\IMS.Migrations.changeintTostringForVehicle.resources
 C:\Users\azhan\OneDrive\Desktop\EFJtex\JTEx2\IMS\obj\Debug\IMS.Migrations.databaseChanging.resources
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\bin\Debug\IMS.dll.config
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\bin\Debug\IMS.dll
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\bin\Debug\IMS.pdb
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\bin\Debug\EntityFramework.dll
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\bin\Debug\EntityFramework.xml
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\obj\Debug\IMS.csproj.CoreCompileInputs.cache
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\obj\Debug\IMS.csproj.CopyComplete
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\obj\Debug\IMS.dll
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\obj\Debug\IMS.pdb
+C:\Users\fahid\Source\Repos\jtexERP3\JTEx2\IMS\obj\Debug\IMS.csprojAssemblyReference.cache
+C:\Users\fahid\source\repos\jtexERP3\JTEx2\IMS\obj\Debug\IMS.Migrations.initial.resources
+C:\Users\fahid\source\repos\jtexERP3\JTEx2\IMS\obj\Debug\IMS.csproj.GenerateResource.cache

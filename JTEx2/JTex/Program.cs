@@ -25,7 +25,7 @@ namespace JTex
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormYarnStore());
+            Application.Run(new YarnMainForm());
         }
       
     }

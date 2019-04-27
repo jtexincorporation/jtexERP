@@ -2382,26 +2382,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IMS.dll" size="51200">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IMS.dll" size="28160">
       <assemblyIdentity name="IMS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>S86mT3yX2fDxUO+y9tyhURjtP0dnNUx53aGIIqdXSUw=</dsig:DigestValue>
+        <dsig:DigestValue>W/OPQiOOObxBUHKJI6mGNcHtH9rvtwgP/xZ8Pr4hRp4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JTex.exe" size="1500640">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JTex.exe" size="1684960">
       <assemblyIdentity name="JTex" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>JMBfC/gVx/2V0Coj7/GvPghQbdK2GK+937HxccUpps4=</dsig:DigestValue>
+        <dsig:DigestValue>oCsGe7XX03DwZZd6gYLfwjS9ayaEaXJfKIuPdHtrdkk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2413,7 +2413,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gpD3+945aCQppMNtJ5h9+W/ulGI9SJmlJ5K95KnfNos=</dsig:DigestValue>
+        <dsig:DigestValue>ULAs7IOdzip6xG5Hg6KEDnBzAs1aHcT/VQucQY9/pmk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

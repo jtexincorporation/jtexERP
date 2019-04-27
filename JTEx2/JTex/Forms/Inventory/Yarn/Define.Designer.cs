@@ -30,7 +30,6 @@ namespace JTex.Forms.Inventory.Yarn
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Define));
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -43,34 +42,31 @@ namespace JTex.Forms.Inventory.Yarn
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.btn1 = new System.Windows.Forms.Button();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.Yarn_idTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.TypeTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.CountTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.BrandNameTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.L4_idLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.level4BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.level4BindingSource = new System.Windows.Forms.BindingSource();
             this.isActive = new DevExpress.XtraEditors.CheckEdit();
             this.ItemTypeTextEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.ItemForYarn_id = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ItemForType = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForCount = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForBrandName = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForL4_id = new DevExpress.XtraLayout.LayoutControlItem();
-            this.ItemForItemType = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForYarn_id = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForBrandName = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForCount = new DevExpress.XtraLayout.LayoutControlItem();
             this.ItemForisActive = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ItemForItemType = new DevExpress.XtraLayout.LayoutControlItem();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Yarn_idTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TypeTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountTextEdit.Properties)).BeginInit();
@@ -81,14 +77,16 @@ namespace JTex.Forms.Inventory.Yarn
             ((System.ComponentModel.ISupportInitialize)(this.ItemTypeTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForYarn_id)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForType)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForBrandName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForL4_id)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForItemType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForYarn_id)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForBrandName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForisActive)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForItemType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonPage1
@@ -201,32 +199,23 @@ namespace JTex.Forms.Inventory.Yarn
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(1007, 143);
-            this.ribbon.StatusBar = this.ribbonStatusBar;
-            // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 536);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1007, 31);
+            this.ribbon.Size = new System.Drawing.Size(1170, 143);
             // 
             // btn1
             // 
             this.btn1.BackColor = System.Drawing.Color.DodgerBlue;
             this.btn1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn1.ForeColor = System.Drawing.Color.White;
             this.btn1.Location = new System.Drawing.Point(0, 143);
             this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(1007, 47);
+            this.btn1.Size = new System.Drawing.Size(1170, 47);
             this.btn1.TabIndex = 2;
             this.btn1.Text = "Yarn Define";
             this.btn1.UseVisualStyleBackColor = false;
             // 
             // dataLayoutControl1
             // 
-            this.dataLayoutControl1.Controls.Add(this.gridControl1);
             this.dataLayoutControl1.Controls.Add(this.Yarn_idTextEdit);
             this.dataLayoutControl1.Controls.Add(this.TypeTextEdit);
             this.dataLayoutControl1.Controls.Add(this.CountTextEdit);
@@ -238,30 +227,13 @@ namespace JTex.Forms.Inventory.Yarn
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 190);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1007, 322);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(1170, 177);
             this.dataLayoutControl1.TabIndex = 3;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
-            // gridControl1
-            // 
-            this.gridControl1.Location = new System.Drawing.Point(12, 108);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.MenuManager = this.ribbon;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(983, 202);
-            this.gridControl1.TabIndex = 11;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.DoubleClick += new System.EventHandler(this.gridView1_DoubleClick);
-            // 
             // Yarn_idTextEdit
             // 
-            this.Yarn_idTextEdit.Location = new System.Drawing.Point(73, 12);
+            this.Yarn_idTextEdit.Location = new System.Drawing.Point(85, 64);
             this.Yarn_idTextEdit.MenuManager = this.ribbon;
             this.Yarn_idTextEdit.Name = "Yarn_idTextEdit";
             this.Yarn_idTextEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -269,40 +241,40 @@ namespace JTex.Forms.Inventory.Yarn
             this.Yarn_idTextEdit.Properties.Mask.EditMask = "d";
             this.Yarn_idTextEdit.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Numeric;
             this.Yarn_idTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.Yarn_idTextEdit.Size = new System.Drawing.Size(428, 20);
+            this.Yarn_idTextEdit.Size = new System.Drawing.Size(489, 20);
             this.Yarn_idTextEdit.StyleController = this.dataLayoutControl1;
             this.Yarn_idTextEdit.TabIndex = 4;
             // 
             // TypeTextEdit
             // 
-            this.TypeTextEdit.Location = new System.Drawing.Point(73, 36);
+            this.TypeTextEdit.Location = new System.Drawing.Point(85, 88);
             this.TypeTextEdit.MenuManager = this.ribbon;
             this.TypeTextEdit.Name = "TypeTextEdit";
-            this.TypeTextEdit.Size = new System.Drawing.Size(428, 20);
+            this.TypeTextEdit.Size = new System.Drawing.Size(489, 20);
             this.TypeTextEdit.StyleController = this.dataLayoutControl1;
             this.TypeTextEdit.TabIndex = 5;
             // 
             // CountTextEdit
             // 
-            this.CountTextEdit.Location = new System.Drawing.Point(566, 36);
+            this.CountTextEdit.Location = new System.Drawing.Point(639, 88);
             this.CountTextEdit.MenuManager = this.ribbon;
             this.CountTextEdit.Name = "CountTextEdit";
-            this.CountTextEdit.Size = new System.Drawing.Size(429, 20);
+            this.CountTextEdit.Size = new System.Drawing.Size(490, 20);
             this.CountTextEdit.StyleController = this.dataLayoutControl1;
             this.CountTextEdit.TabIndex = 6;
             // 
             // BrandNameTextEdit
             // 
-            this.BrandNameTextEdit.Location = new System.Drawing.Point(566, 12);
+            this.BrandNameTextEdit.Location = new System.Drawing.Point(639, 64);
             this.BrandNameTextEdit.MenuManager = this.ribbon;
             this.BrandNameTextEdit.Name = "BrandNameTextEdit";
-            this.BrandNameTextEdit.Size = new System.Drawing.Size(429, 20);
+            this.BrandNameTextEdit.Size = new System.Drawing.Size(490, 20);
             this.BrandNameTextEdit.StyleController = this.dataLayoutControl1;
             this.BrandNameTextEdit.TabIndex = 7;
             // 
             // L4_idLookUpEdit
             // 
-            this.L4_idLookUpEdit.Location = new System.Drawing.Point(73, 60);
+            this.L4_idLookUpEdit.Location = new System.Drawing.Point(85, 112);
             this.L4_idLookUpEdit.MenuManager = this.ribbon;
             this.L4_idLookUpEdit.Name = "L4_idLookUpEdit";
             this.L4_idLookUpEdit.Properties.Appearance.Options.UseTextOptions = true;
@@ -313,7 +285,7 @@ namespace JTex.Forms.Inventory.Yarn
             this.L4_idLookUpEdit.Properties.DisplayMember = "L4_id";
             this.L4_idLookUpEdit.Properties.NullText = "";
             this.L4_idLookUpEdit.Properties.ValueMember = "L4_id";
-            this.L4_idLookUpEdit.Size = new System.Drawing.Size(922, 20);
+            this.L4_idLookUpEdit.Size = new System.Drawing.Size(489, 20);
             this.L4_idLookUpEdit.StyleController = this.dataLayoutControl1;
             this.L4_idLookUpEdit.TabIndex = 8;
             // 
@@ -323,19 +295,19 @@ namespace JTex.Forms.Inventory.Yarn
             // 
             // isActive
             // 
-            this.isActive.EditValue = null;
-            this.isActive.Location = new System.Drawing.Point(505, 84);
+            this.isActive.EditValue = true;
+            this.isActive.Location = new System.Drawing.Point(24, 136);
             this.isActive.MenuManager = this.ribbon;
             this.isActive.Name = "isActive";
             this.isActive.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Default;
             this.isActive.Properties.Caption = "IsActive";
-            this.isActive.Size = new System.Drawing.Size(490, 19);
+            this.isActive.Size = new System.Drawing.Size(1105, 19);
             this.isActive.StyleController = this.dataLayoutControl1;
             this.isActive.TabIndex = 10;
             // 
             // ItemTypeTextEdit
             // 
-            this.ItemTypeTextEdit.Location = new System.Drawing.Point(73, 84);
+            this.ItemTypeTextEdit.Location = new System.Drawing.Point(639, 112);
             this.ItemTypeTextEdit.MenuManager = this.ribbon;
             this.ItemTypeTextEdit.Name = "ItemTypeTextEdit";
             this.ItemTypeTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -343,7 +315,7 @@ namespace JTex.Forms.Inventory.Yarn
             this.ItemTypeTextEdit.Properties.Items.AddRange(new object[] {
             "Yarn",
             "Lycra"});
-            this.ItemTypeTextEdit.Size = new System.Drawing.Size(428, 20);
+            this.ItemTypeTextEdit.Size = new System.Drawing.Size(490, 20);
             this.ItemTypeTextEdit.StyleController = this.dataLayoutControl1;
             this.ItemTypeTextEdit.TabIndex = 9;
             // 
@@ -352,10 +324,9 @@ namespace JTex.Forms.Inventory.Yarn
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlGroup2,
-            this.layoutControlItem1});
+            this.layoutControlGroup2});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1007, 322);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1153, 179);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -363,109 +334,124 @@ namespace JTex.Forms.Inventory.Yarn
             this.layoutControlGroup2.AllowDrawBackground = false;
             this.layoutControlGroup2.GroupBordersVisible = false;
             this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.ItemForYarn_id,
-            this.ItemForType,
-            this.ItemForL4_id,
-            this.ItemForItemType,
-            this.ItemForCount,
-            this.ItemForBrandName,
-            this.ItemForisActive});
+            this.layoutControlGroup3});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(987, 96);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(1133, 159);
             // 
-            // ItemForYarn_id
+            // layoutControlGroup3
             // 
-            this.ItemForYarn_id.Control = this.Yarn_idTextEdit;
-            this.ItemForYarn_id.Location = new System.Drawing.Point(0, 0);
-            this.ItemForYarn_id.Name = "ItemForYarn_id";
-            this.ItemForYarn_id.Size = new System.Drawing.Size(493, 24);
-            this.ItemForYarn_id.Text = "Yarn_id";
-            this.ItemForYarn_id.TextSize = new System.Drawing.Size(58, 13);
+            this.layoutControlGroup3.CaptionImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("layoutControlGroup3.CaptionImageOptions.Image")));
+            this.layoutControlGroup3.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.ItemForType,
+            this.ItemForL4_id,
+            this.ItemForYarn_id,
+            this.ItemForBrandName,
+            this.ItemForCount,
+            this.ItemForisActive,
+            this.ItemForItemType});
+            this.layoutControlGroup3.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup3.Name = "layoutControlGroup3";
+            this.layoutControlGroup3.Size = new System.Drawing.Size(1133, 159);
+            this.layoutControlGroup3.Text = "Define Yarn";
             // 
             // ItemForType
             // 
             this.ItemForType.Control = this.TypeTextEdit;
             this.ItemForType.Location = new System.Drawing.Point(0, 24);
             this.ItemForType.Name = "ItemForType";
-            this.ItemForType.Size = new System.Drawing.Size(493, 24);
+            this.ItemForType.Size = new System.Drawing.Size(554, 24);
             this.ItemForType.Text = "Type";
             this.ItemForType.TextSize = new System.Drawing.Size(58, 13);
-            // 
-            // ItemForCount
-            // 
-            this.ItemForCount.Control = this.CountTextEdit;
-            this.ItemForCount.Location = new System.Drawing.Point(493, 24);
-            this.ItemForCount.Name = "ItemForCount";
-            this.ItemForCount.Size = new System.Drawing.Size(494, 24);
-            this.ItemForCount.Text = "Count";
-            this.ItemForCount.TextSize = new System.Drawing.Size(58, 13);
-            // 
-            // ItemForBrandName
-            // 
-            this.ItemForBrandName.Control = this.BrandNameTextEdit;
-            this.ItemForBrandName.Location = new System.Drawing.Point(493, 0);
-            this.ItemForBrandName.Name = "ItemForBrandName";
-            this.ItemForBrandName.Size = new System.Drawing.Size(494, 24);
-            this.ItemForBrandName.Text = "Brand Name";
-            this.ItemForBrandName.TextSize = new System.Drawing.Size(58, 13);
             // 
             // ItemForL4_id
             // 
             this.ItemForL4_id.Control = this.L4_idLookUpEdit;
             this.ItemForL4_id.Location = new System.Drawing.Point(0, 48);
             this.ItemForL4_id.Name = "ItemForL4_id";
-            this.ItemForL4_id.Size = new System.Drawing.Size(987, 24);
+            this.ItemForL4_id.Size = new System.Drawing.Size(554, 24);
             this.ItemForL4_id.Text = "L4_id";
             this.ItemForL4_id.TextSize = new System.Drawing.Size(58, 13);
             // 
-            // ItemForItemType
+            // ItemForYarn_id
             // 
-            this.ItemForItemType.Control = this.ItemTypeTextEdit;
-            this.ItemForItemType.Location = new System.Drawing.Point(0, 72);
-            this.ItemForItemType.Name = "ItemForItemType";
-            this.ItemForItemType.Size = new System.Drawing.Size(493, 24);
-            this.ItemForItemType.Text = "Item Type";
-            this.ItemForItemType.TextSize = new System.Drawing.Size(58, 13);
+            this.ItemForYarn_id.Control = this.Yarn_idTextEdit;
+            this.ItemForYarn_id.Location = new System.Drawing.Point(0, 0);
+            this.ItemForYarn_id.Name = "ItemForYarn_id";
+            this.ItemForYarn_id.Size = new System.Drawing.Size(554, 24);
+            this.ItemForYarn_id.Text = "Yarn ID";
+            this.ItemForYarn_id.TextSize = new System.Drawing.Size(58, 13);
+            // 
+            // ItemForBrandName
+            // 
+            this.ItemForBrandName.Control = this.BrandNameTextEdit;
+            this.ItemForBrandName.Location = new System.Drawing.Point(554, 0);
+            this.ItemForBrandName.Name = "ItemForBrandName";
+            this.ItemForBrandName.Size = new System.Drawing.Size(555, 24);
+            this.ItemForBrandName.Text = "Brand Name";
+            this.ItemForBrandName.TextSize = new System.Drawing.Size(58, 13);
+            // 
+            // ItemForCount
+            // 
+            this.ItemForCount.Control = this.CountTextEdit;
+            this.ItemForCount.Location = new System.Drawing.Point(554, 24);
+            this.ItemForCount.Name = "ItemForCount";
+            this.ItemForCount.Size = new System.Drawing.Size(555, 24);
+            this.ItemForCount.Text = "Count";
+            this.ItemForCount.TextSize = new System.Drawing.Size(58, 13);
             // 
             // ItemForisActive
             // 
             this.ItemForisActive.Control = this.isActive;
-            this.ItemForisActive.Location = new System.Drawing.Point(493, 72);
+            this.ItemForisActive.Location = new System.Drawing.Point(0, 72);
             this.ItemForisActive.Name = "ItemForisActive";
-            this.ItemForisActive.Size = new System.Drawing.Size(494, 24);
+            this.ItemForisActive.Size = new System.Drawing.Size(1109, 23);
             this.ItemForisActive.Text = "is Active";
             this.ItemForisActive.TextSize = new System.Drawing.Size(0, 0);
             this.ItemForisActive.TextVisible = false;
             // 
-            // layoutControlItem1
+            // ItemForItemType
             // 
-            this.layoutControlItem1.Control = this.gridControl1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 96);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(987, 206);
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem1.TextVisible = false;
+            this.ItemForItemType.Control = this.ItemTypeTextEdit;
+            this.ItemForItemType.Location = new System.Drawing.Point(554, 48);
+            this.ItemForItemType.Name = "ItemForItemType";
+            this.ItemForItemType.Size = new System.Drawing.Size(555, 24);
+            this.ItemForItemType.Text = "Item Type";
+            this.ItemForItemType.TextSize = new System.Drawing.Size(58, 13);
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 367);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.MenuManager = this.ribbon;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(1170, 383);
+            this.gridControl1.TabIndex = 5;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
             // 
             // Define
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 567);
+            this.ClientSize = new System.Drawing.Size(1170, 750);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.btn1);
-            this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Name = "Define";
             this.Ribbon = this.ribbon;
-            this.StatusBar = this.ribbonStatusBar;
             this.Text = "YarnDefine";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Yarn_idTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TypeTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountTextEdit.Properties)).EndInit();
@@ -476,14 +462,16 @@ namespace JTex.Forms.Inventory.Yarn
             ((System.ComponentModel.ISupportInitialize)(this.ItemTypeTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForYarn_id)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForType)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForBrandName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForL4_id)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemForItemType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForYarn_id)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForBrandName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ItemForisActive)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ItemForItemType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,7 +490,6 @@ namespace JTex.Forms.Inventory.Yarn
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbon;
-        private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
         private System.Windows.Forms.Button btn1;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
@@ -521,9 +508,9 @@ namespace JTex.Forms.Inventory.Yarn
         private DevExpress.XtraLayout.LayoutControlItem ItemForItemType;
         private DevExpress.XtraLayout.LayoutControlItem ItemForisActive;
         private DevExpress.XtraEditors.ComboBoxEdit ItemTypeTextEdit;
+        private System.Windows.Forms.BindingSource level4BindingSource;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private System.Windows.Forms.BindingSource level4BindingSource;
     }
 }

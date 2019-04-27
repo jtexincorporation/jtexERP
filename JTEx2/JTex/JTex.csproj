@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>39</ApplicationRevision>
+    <ApplicationRevision>40</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -409,6 +409,18 @@
     <Compile Include="Forms\Inventory\Yarn\FormYarnStore.Designer.cs">
       <DependentUpon>FormYarnStore.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Inventory\Yarn\YarnMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\Yarn\YarnMainForm.Designer.cs">
+      <DependentUpon>YarnMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\Yarn\YarnStockEnteryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\Yarn\YarnStockEnteryForm.Designer.cs">
+      <DependentUpon>YarnStockEnteryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\JV\BonusForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -625,6 +637,12 @@
     <EmbeddedResource Include="Forms\Inventory\Yarn\FormYarnStore.resx">
       <DependentUpon>FormYarnStore.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\Yarn\YarnMainForm.resx">
+      <DependentUpon>YarnMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\Yarn\YarnStockEnteryForm.resx">
+      <DependentUpon>YarnStockEnteryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\JV\BonusForm.resx">
       <DependentUpon>BonusForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -677,6 +695,7 @@
     <None Include="Properties\DataSources\BankDataSet.datasource" />
     <None Include="Properties\DataSources\IMS.DemandGenerate.datasource" />
     <None Include="Properties\DataSources\IMS.YarnStock.datasource" />
+    <None Include="Properties\DataSources\IMS.yDefine.datasource" />
     <None Include="Properties\DataSources\Inventory.YarnDefine.datasource" />
     <None Include="Properties\DataSources\Modelx.Article.datasource" />
     <None Include="Properties\DataSources\Modelx.Brand.datasource" />

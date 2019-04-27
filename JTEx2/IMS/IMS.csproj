@@ -52,37 +52,9 @@
   <ItemGroup>
     <Compile Include="DemandGenerate.cs" />
     <Compile Include="IMSEntityModel.cs" />
-    <Compile Include="Migrations\201904260751347_initialIMS.cs" />
-    <Compile Include="Migrations\201904260751347_initialIMS.Designer.cs">
-      <DependentUpon>201904260751347_initialIMS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904260817235_addDemandTable.cs" />
-    <Compile Include="Migrations\201904260817235_addDemandTable.Designer.cs">
-      <DependentUpon>201904260817235_addDemandTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904260914054_IntTOFloat.cs" />
-    <Compile Include="Migrations\201904260914054_IntTOFloat.Designer.cs">
-      <DependentUpon>201904260914054_IntTOFloat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904260943587_changeIntToString.cs" />
-    <Compile Include="Migrations\201904260943587_changeIntToString.Designer.cs">
-      <DependentUpon>201904260943587_changeIntToString.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904261005331_ADDyarnStock.cs" />
-    <Compile Include="Migrations\201904261005331_ADDyarnStock.Designer.cs">
-      <DependentUpon>201904261005331_ADDyarnStock.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904261007496_newtableInventory.cs" />
-    <Compile Include="Migrations\201904261007496_newtableInventory.Designer.cs">
-      <DependentUpon>201904261007496_newtableInventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904261123525_changeintTostringForVehicle.cs" />
-    <Compile Include="Migrations\201904261123525_changeintTostringForVehicle.Designer.cs">
-      <DependentUpon>201904261123525_changeintTostringForVehicle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904270749500_databaseChanging.cs" />
-    <Compile Include="Migrations\201904270749500_databaseChanging.Designer.cs">
-      <DependentUpon>201904270749500_databaseChanging.cs</DependentUpon>
+    <Compile Include="Migrations\201904271139126_initial.cs" />
+    <Compile Include="Migrations\201904271139126_initial.Designer.cs">
+      <DependentUpon>201904271139126_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="YarnStock.cs" />
@@ -94,29 +66,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904260751347_initialIMS.resx">
-      <DependentUpon>201904260751347_initialIMS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904260817235_addDemandTable.resx">
-      <DependentUpon>201904260817235_addDemandTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904260914054_IntTOFloat.resx">
-      <DependentUpon>201904260914054_IntTOFloat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904260943587_changeIntToString.resx">
-      <DependentUpon>201904260943587_changeIntToString.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904261005331_ADDyarnStock.resx">
-      <DependentUpon>201904261005331_ADDyarnStock.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904261007496_newtableInventory.resx">
-      <DependentUpon>201904261007496_newtableInventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904261123525_changeintTostringForVehicle.resx">
-      <DependentUpon>201904261123525_changeintTostringForVehicle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904270749500_databaseChanging.resx">
-      <DependentUpon>201904270749500_databaseChanging.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904271139126_initial.resx">
+      <DependentUpon>201904271139126_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
