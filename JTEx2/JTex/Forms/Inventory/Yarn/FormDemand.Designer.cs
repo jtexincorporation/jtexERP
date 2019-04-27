@@ -315,7 +315,7 @@
             this.Demand_poTextEdit.Properties.DataSource = this.purchaseOrdersBindingSource;
             this.Demand_poTextEdit.Properties.DisplayMember = "po";
             this.Demand_poTextEdit.Properties.NullText = "";
-            this.Demand_poTextEdit.Properties.ValueMember = "doc";
+            this.Demand_poTextEdit.Properties.ValueMember = "po";
             this.Demand_poTextEdit.Size = new System.Drawing.Size(529, 20);
             this.Demand_poTextEdit.StyleController = this.dataLayoutControl1;
             this.Demand_poTextEdit.TabIndex = 5;

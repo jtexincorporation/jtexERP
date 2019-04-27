@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormYarnStore));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.SaveYarnStore = new DevExpress.XtraBars.BarButtonItem();
@@ -41,15 +42,13 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.button2 = new System.Windows.Forms.Button();
-            this.yarnStocksBindingSource = new System.Windows.Forms.BindingSource();
-            this.yarnStockBindingSource = new System.Windows.Forms.BindingSource();
-            this.purchaseOrdersBindingSource = new System.Windows.Forms.BindingSource();
-            this.suppliersBindingSource = new System.Windows.Forms.BindingSource();
+            this.yarnStocksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yarnStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.purchaseOrdersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.VehicleNumberTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.StoreIDTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.Yarn_PoLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.PartyIDLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.yarnGatepassTextEdit = new DevExpress.XtraEditors.TextEdit();
             this.DateDateEdit = new DevExpress.XtraEditors.DateEdit();
             this.CategoryComboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -71,11 +70,13 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colYarnID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemSearchLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit();
-            this.yDefineBindingSource = new System.Windows.Forms.BindingSource();
+            this.yDefineBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.repositoryItemSearchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colYarnsBags = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colYarnNetweighy = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colDescription = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.PartyIDLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.Yarn_PoLookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yarnStocksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yarnStockBindingSource)).BeginInit();
@@ -85,8 +86,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.StoreIDTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Yarn_PoLookUpEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PartyIDLookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yarnGatepassTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateDateEdit.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateDateEdit.Properties)).BeginInit();
@@ -110,6 +109,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchLookUpEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yDefineBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchLookUpEdit1View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PartyIDLookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Yarn_PoLookUpEdit.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -266,14 +267,14 @@
             // dataLayoutControl1
             // 
             this.dataLayoutControl1.Controls.Add(this.StoreIDTextEdit);
-            this.dataLayoutControl1.Controls.Add(this.Yarn_PoLookUpEdit);
-            this.dataLayoutControl1.Controls.Add(this.PartyIDLookUpEdit);
             this.dataLayoutControl1.Controls.Add(this.yarnGatepassTextEdit);
             this.dataLayoutControl1.Controls.Add(this.DateDateEdit);
             this.dataLayoutControl1.Controls.Add(this.CategoryComboBoxEdit);
             this.dataLayoutControl1.Controls.Add(this.AmountTextEdit);
             this.dataLayoutControl1.Controls.Add(this.DriverNameTextEdit);
             this.dataLayoutControl1.Controls.Add(this.VehicleNumberTextEdit);
+            this.dataLayoutControl1.Controls.Add(this.PartyIDLookUpEdit);
+            this.dataLayoutControl1.Controls.Add(this.Yarn_PoLookUpEdit);
             this.dataLayoutControl1.DataSource = this.yarnStockBindingSource;
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 168);
@@ -298,52 +299,6 @@
             this.StoreIDTextEdit.StyleController = this.dataLayoutControl1;
             this.StoreIDTextEdit.TabIndex = 4;
             this.StoreIDTextEdit.Visible = false;
-            // 
-            // Yarn_PoLookUpEdit
-            // 
-            this.Yarn_PoLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.yarnStockBindingSource, "Yarn_Po", true));
-            this.Yarn_PoLookUpEdit.Location = new System.Drawing.Point(419, 64);
-            this.Yarn_PoLookUpEdit.MenuManager = this.ribbon;
-            this.Yarn_PoLookUpEdit.Name = "Yarn_PoLookUpEdit";
-            this.Yarn_PoLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.Yarn_PoLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("doc", "doc"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("id", "id"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("date", "Date"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("po", "PO"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("client", "client")});
-            this.Yarn_PoLookUpEdit.Properties.DataSource = this.purchaseOrdersBindingSource;
-            this.Yarn_PoLookUpEdit.Properties.DisplayMember = "po";
-            this.Yarn_PoLookUpEdit.Properties.NullText = "";
-            this.Yarn_PoLookUpEdit.Properties.ValueMember = "doc";
-            this.Yarn_PoLookUpEdit.Size = new System.Drawing.Size(213, 20);
-            this.Yarn_PoLookUpEdit.StyleController = this.dataLayoutControl1;
-            this.Yarn_PoLookUpEdit.TabIndex = 5;
-            // 
-            // PartyIDLookUpEdit
-            // 
-            this.PartyIDLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.yarnStockBindingSource, "PartyID", true));
-            this.PartyIDLookUpEdit.Location = new System.Drawing.Point(100, 64);
-            this.PartyIDLookUpEdit.MenuManager = this.ribbon;
-            this.PartyIDLookUpEdit.Name = "PartyIDLookUpEdit";
-            this.PartyIDLookUpEdit.Properties.Appearance.Options.UseTextOptions = true;
-            this.PartyIDLookUpEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.PartyIDLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.PartyIDLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SupplierID", "SupplierID"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("AccountID", "AccountID"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Category", "Category"),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Address", "Address")});
-            this.PartyIDLookUpEdit.Properties.DataSource = this.suppliersBindingSource;
-            this.PartyIDLookUpEdit.Properties.DisplayMember = "Name";
-            this.PartyIDLookUpEdit.Properties.NullText = "";
-            this.PartyIDLookUpEdit.Properties.ValueMember = "SupplierID";
-            this.PartyIDLookUpEdit.Size = new System.Drawing.Size(239, 20);
-            this.PartyIDLookUpEdit.StyleController = this.dataLayoutControl1;
-            this.PartyIDLookUpEdit.TabIndex = 6;
             // 
             // yarnGatepassTextEdit
             // 
@@ -618,6 +573,47 @@
             this.colDescription.Visible = true;
             this.colDescription.VisibleIndex = 3;
             // 
+            // PartyIDLookUpEdit
+            // 
+            this.PartyIDLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.yarnStockBindingSource, "PartyID", true));
+            this.PartyIDLookUpEdit.Location = new System.Drawing.Point(100, 64);
+            this.PartyIDLookUpEdit.MenuManager = this.ribbon;
+            this.PartyIDLookUpEdit.Name = "PartyIDLookUpEdit";
+            this.PartyIDLookUpEdit.Properties.Appearance.Options.UseTextOptions = true;
+            this.PartyIDLookUpEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.PartyIDLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.PartyIDLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SupplierID", "Supplier ID", 75, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 37, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Category", "Category", 55, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.PartyIDLookUpEdit.Properties.DataSource = this.suppliersBindingSource;
+            this.PartyIDLookUpEdit.Properties.DisplayMember = "Name";
+            this.PartyIDLookUpEdit.Properties.NullText = "";
+            this.PartyIDLookUpEdit.Properties.ValueMember = "SupplierID";
+            this.PartyIDLookUpEdit.Size = new System.Drawing.Size(239, 20);
+            this.PartyIDLookUpEdit.StyleController = this.dataLayoutControl1;
+            this.PartyIDLookUpEdit.TabIndex = 6;
+            // 
+            // Yarn_PoLookUpEdit
+            // 
+            this.Yarn_PoLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.yarnStockBindingSource, "Yarn_Po", true));
+            this.Yarn_PoLookUpEdit.Location = new System.Drawing.Point(419, 64);
+            this.Yarn_PoLookUpEdit.MenuManager = this.ribbon;
+            this.Yarn_PoLookUpEdit.Name = "Yarn_PoLookUpEdit";
+            this.Yarn_PoLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.Yarn_PoLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("doc", "doc", 40, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("po", "po", 22, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.Yarn_PoLookUpEdit.Properties.DataSource = this.purchaseOrdersBindingSource;
+            this.Yarn_PoLookUpEdit.Properties.DisplayMember = "po";
+            this.Yarn_PoLookUpEdit.Properties.NullText = "";
+            this.Yarn_PoLookUpEdit.Properties.ValueMember = "po";
+            this.Yarn_PoLookUpEdit.Size = new System.Drawing.Size(213, 20);
+            this.Yarn_PoLookUpEdit.StyleController = this.dataLayoutControl1;
+            this.Yarn_PoLookUpEdit.TabIndex = 5;
+            // 
             // FormYarnStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -640,8 +636,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.StoreIDTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Yarn_PoLookUpEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PartyIDLookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yarnGatepassTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateDateEdit.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DateDateEdit.Properties)).EndInit();
@@ -665,6 +659,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchLookUpEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yDefineBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSearchLookUpEdit1View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PartyIDLookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Yarn_PoLookUpEdit.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -691,8 +687,6 @@
         private DevExpress.XtraEditors.TextEdit VehicleNumberTextEdit;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
         private DevExpress.XtraEditors.TextEdit StoreIDTextEdit;
-        private DevExpress.XtraEditors.LookUpEdit Yarn_PoLookUpEdit;
-        private DevExpress.XtraEditors.LookUpEdit PartyIDLookUpEdit;
         private DevExpress.XtraEditors.TextEdit yarnGatepassTextEdit;
         private DevExpress.XtraEditors.DateEdit DateDateEdit;
         private DevExpress.XtraEditors.ComboBoxEdit CategoryComboBoxEdit;
@@ -713,11 +707,13 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colYarnID;
         private DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit repositoryItemSearchLookUpEdit1;
-        private System.Windows.Forms.BindingSource yDefineBindingSource;
         private DevExpress.XtraGrid.Views.Grid.GridView repositoryItemSearchLookUpEdit1View;
         private DevExpress.XtraGrid.Columns.GridColumn colYarnsBags;
         private DevExpress.XtraGrid.Columns.GridColumn colYarnNetweighy;
         private DevExpress.XtraGrid.Columns.GridColumn colDescription;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup3;
+        private System.Windows.Forms.BindingSource yDefineBindingSource;
+        private DevExpress.XtraEditors.LookUpEdit PartyIDLookUpEdit;
+        private DevExpress.XtraEditors.LookUpEdit Yarn_PoLookUpEdit;
     }
 }

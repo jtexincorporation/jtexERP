@@ -72,7 +72,6 @@ namespace JTex.Forms.Inventory.Yarn
         //addDemand Method
         private void AddDemand()
         {
-            demandGenerate.Demand_id = Convert.ToInt32(Demand_idTextEdit.Text.Trim());
             demandGenerate.Demand_po = Demand_poTextEdit.EditValue.ToString();
             demandGenerate.Demand_yarnID = Convert.ToInt32(Demand_yarnIDTextEdit.EditValue.ToString());
             demandGenerate.Demand_Bags = Convert.ToInt32(Demand_BagsTextEdit.Text.Trim());
