@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArticleList));
             DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery1 = new DevExpress.DataAccess.Sql.StoredProcQuery();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
@@ -44,7 +43,7 @@
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colBrand = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -131,6 +130,7 @@
             this.SaveBtn.Id = 16;
             this.SaveBtn.ImageOptions.ImageUri.Uri = "New";
             this.SaveBtn.Name = "SaveBtn";
+            //this.SaveBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SaveBtn_ItemClick);
             // 
             // EditBtn
             // 
@@ -214,7 +214,7 @@
             this.repositoryItemGridLookUpEdit2,
             this.repositoryItemGridLookUpEdit3,
             this.repositoryItemGridLookUpEdit4});
-            this.gridControl1.Size = new System.Drawing.Size(805, 661);
+            this.gridControl1.Size = new System.Drawing.Size(805, 627);
             this.gridControl1.TabIndex = 3;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -419,7 +419,7 @@
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pictureEdit1.Size = new System.Drawing.Size(342, 661);
+            this.pictureEdit1.Size = new System.Drawing.Size(342, 627);
             this.pictureEdit1.TabIndex = 5;
             // 
             // tableLayoutPanel1
@@ -434,14 +434,14 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1159, 667);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1159, 633);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // ArticleList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1159, 783);
+            this.ClientSize = new System.Drawing.Size(1159, 749);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.ribbonControl);
             this.Name = "ArticleList";

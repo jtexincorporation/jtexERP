@@ -6,6 +6,7 @@ using JTex.Forms.ArTMS;
 using JTex.Forms.ArTMS.Articles;
 using JTex.Forms.HR;
 using JTex.Forms.Inventory;
+using JTex.Forms.Inventory.Yarn;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace JTex
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            //Application.Run(new FormYarnStore());
         }
       
     }

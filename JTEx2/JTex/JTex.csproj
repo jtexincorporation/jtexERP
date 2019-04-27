@@ -391,6 +391,24 @@
     <Compile Include="Forms\HR\AttendanceForm.Designer.cs">
       <DependentUpon>AttendanceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Inventory\Yarn\Define.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\Yarn\Define.Designer.cs">
+      <DependentUpon>Define.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\Yarn\FormDemand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\Yarn\FormDemand.Designer.cs">
+      <DependentUpon>FormDemand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Inventory\Yarn\FormYarnStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Inventory\Yarn\FormYarnStore.Designer.cs">
+      <DependentUpon>FormYarnStore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\JV\BonusForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -598,6 +616,15 @@
     <EmbeddedResource Include="Forms\Inventory\VoucherInventoryForm.resx">
       <DependentUpon>VoucherInventoryForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\Yarn\Define.resx">
+      <DependentUpon>Define.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\Yarn\FormDemand.resx">
+      <DependentUpon>FormDemand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Inventory\Yarn\FormYarnStore.resx">
+      <DependentUpon>FormYarnStore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\JV\BonusForm.resx">
       <DependentUpon>BonusForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -648,6 +675,9 @@
     <None Include="JTex_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\BankDataSet.datasource" />
+    <None Include="Properties\DataSources\IMS.DemandGenerate.datasource" />
+    <None Include="Properties\DataSources\IMS.YarnStock.datasource" />
+    <None Include="Properties\DataSources\Inventory.YarnDefine.datasource" />
     <None Include="Properties\DataSources\Modelx.Article.datasource" />
     <None Include="Properties\DataSources\Modelx.Brand.datasource" />
     <None Include="Properties\DataSources\Modelx.Client.datasource" />
@@ -676,6 +706,10 @@
     <Folder Include="Reports\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\IMS\IMS.csproj">
+      <Project>{697ece17-3293-4937-899d-b1627938c75e}</Project>
+      <Name>IMS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Modelx\Modelx.csproj">
       <Project>{4683c906-e4ec-47c6-aaf0-b32ddc198b93}</Project>
       <Name>Modelx</Name>

@@ -2382,14 +2382,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JTex.exe" size="1416672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="IMS.dll" size="51200">
+      <assemblyIdentity name="IMS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>S86mT3yX2fDxUO+y9tyhURjtP0dnNUx53aGIIqdXSUw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="JTex.exe" size="1500640">
       <assemblyIdentity name="JTex" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>w//2abrT7d8sAcqhwMqoT/pleP061IZHzeGctP/p12I=</dsig:DigestValue>
+        <dsig:DigestValue>JMBfC/gVx/2V0Coj7/GvPghQbdK2GK+937HxccUpps4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2401,17 +2413,17 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uD4f3RTNgttmyB7oTyrUBt37bL97J4STdm8vpaM7FlU=</dsig:DigestValue>
+        <dsig:DigestValue>gpD3+945aCQppMNtJ5h9+W/ulGI9SJmlJ5K95KnfNos=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="JTex.exe.config" size="1657">
+  <file name="JTex.exe.config" size="1876">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>JX3vsku6FJu3ro0hyTy9noixieth3TeUk4OK8OLF7nc=</dsig:DigestValue>
+      <dsig:DigestValue>H7UnrHSEZBFw5E2XqrP/QuWAGaCrWXQsU+3tnleBjFg=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
